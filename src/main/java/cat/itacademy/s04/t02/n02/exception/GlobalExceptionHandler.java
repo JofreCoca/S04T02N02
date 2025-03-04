@@ -1,4 +1,4 @@
-package cat.itacademy.s04.t02.n02.Exception;
+package cat.itacademy.s04.t02.n02.exception;
 
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.HttpStatus;
@@ -12,8 +12,8 @@ import java.util.HashMap;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
-    @ExceptionHandler({FruitNotFoundException.class})
-    public ResponseEntity<Object> handleFruitNotFoundException(FruitNotFoundException e){
+    @ExceptionHandler({FruitaNotFoundException.class})
+    public ResponseEntity<Object> handleFruitNotFoundException(FruitaNotFoundException e){
         return ResponseEntity
                 .status(HttpStatus.NOT_FOUND)
                 .body(e.getMessage());
