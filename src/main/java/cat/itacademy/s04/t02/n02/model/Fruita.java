@@ -9,9 +9,9 @@ import jakarta.persistence.Id;
 public class Fruita {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int id;
-    String nom;
-    int quantitatQuilos;
+    private int id;
+    private String nom;
+    private int quantitatQuilos;
 
     public int getId() {
         return id;
