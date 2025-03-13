@@ -11,7 +11,7 @@ public class Fruita {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nom;
-    private  int quantitatQuilos;
+    private int quantitatQuilos;
 
     public int getId() {
         return id;
